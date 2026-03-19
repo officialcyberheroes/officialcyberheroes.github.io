@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "Cyberheroes Quiz",
+    "type": "quiz",
+    "difficulty": "",
+    "description": "A simple cybersecurity quiz game made by 171k for Student Orientation Week Event 2025!",
+    "tech": "HTML / CSS / JS",
+    "thumbnail": "assets/games/cyberquiz.png",
+    "playLink": "https://cyberquiz.online/",
+    "sourceLink": "https://github.com/171k/UCC_QUIZ",
+    "author": "171k",
+    "date": "2025"
+  }
+]
