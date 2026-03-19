@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games - UiTM Cyberheroes Club</title>
+  <meta name="description" content="Cybersecurity games and interactive challenges built by UiTM Cyberheroes Club members." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/logo.png" alt="UCC Logo" />
+    <span class="nav-brand-text">UiTM Cyberheroes</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="games.html" class="active">Games</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+    <li><a href="https://awan.uitm.edu.my/ctf/" target="_blank" rel="noopener">Playground ↗</a></li>
+    <li><a href="org-chart.html">Our Team</a></li>
+    <li><a href="media.html" class="nav-cta">Collaborate</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="events.html">Events</a>
+  <a href="blog.html">Blog</a>
+  <a href="games.html">Games</a>
+  <a href="leaderboard.html">Leaderboard</a>
+  <a href="hall-of-fame.html">Hall of Fame</a>
+  <a href="https://awan.uitm.edu.my/ctf/" target="_blank" rel="noopener">Playground ↗</a>
+  <a href="org-chart.html">Our Team</a>
+  <a href="media.html">Collaborate</a>
+</div>
+
+<div class="page-wrapper">
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <div class="page-tag">// games</div>
+      <h1>Cyber<span class="grad-text">Games</span></h1>
+      <p>Interactive cybersecurity games and challenges built by UCC members. Learn by playing.</p>
+    </div>
+  </div>
+
+  <!-- GAMES GRID -->
+  <section>
+    <div class="container">
+
+      <!-- Controls -->
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.75rem;">
+        <div class="filter-bar" style="margin-bottom:0;">
+          <button class="filter-btn active" data-group="games" data-filter="all">All</button>
+          <button class="filter-btn" data-group="games" data-filter="challenge">
+            <i class="bi bi-flag-fill" style="margin-right:.35rem;"></i>Challenge
+          </button>
+          <button class="filter-btn" data-group="games" data-filter="puzzle">
+            <i class="bi bi-puzzle-fill" style="margin-right:.35rem;"></i>Puzzle
+          </button>
+          <button class="filter-btn" data-group="games" data-filter="quiz">
+            <i class="bi bi-question-circle-fill" style="margin-right:.35rem;"></i>Quiz
+          </button>
+          <button class="filter-btn" data-group="games" data-filter="simulation">
+            <i class="bi bi-display" style="margin-right:.35rem;"></i>Simulation
+          </button>
+          <button class="filter-btn" data-group="games" data-filter="tool">
+            <i class="bi bi-tools" style="margin-right:.35rem;"></i>Tool
+          </button>
+        </div>
+        <span class="terminal-tag" id="games-count">0 games</span>
+      </div>
+
+      <!-- Populated from data/games.json -->
+      <div class="grid-3" id="games-grid"></div>
+
+    </div>
+  </section>
+
+  <!-- SUBMIT A GAME -->
+  <section style="background:var(--bg-secondary);border-top:1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// submit</span>
+        <div class="divider"><div class="divider-dot"></div></div>
+        <h2 class="section-title">Built Something Cool?</h2>
+        <p class="section-desc">Made a cybersecurity game, tool or challenge? Submit it and get it featured here for the whole club to play.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon"><i class="bi bi-controller" style="font-size:1.5rem;color:var(--red-bright);"></i></div>
+          <h3 class="card-title">Any Format</h3>
+          <p class="card-desc">Web app, Python CLI, Unity project - as long as it teaches or tests a cybersecurity concept, it counts.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="bi bi-github" style="font-size:1.5rem;color:#6a9de8;"></i></div>
+          <h3 class="card-title">Open Source Preferred</h3>
+          <p class="card-desc">Host it on GitHub so others can learn from your code too. A live link is all you need to get listed.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="bi bi-trophy-fill" style="font-size:1.5rem;color:#fbbf24;"></i></div>
+          <h3 class="card-title">Get Credited</h3>
+          <p class="card-desc">Your handle, tech stack and a link to your repo - all featured on the card so people know who built it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.png" alt="UCC" /><span class="footer-brand-name">UiTM Cyberheroes Club</span></div>
+        <p class="footer-desc">The Happy-Go-Lucky cybersecurity club!</p>
+      </div>
+      <div><div class="footer-h">Pages</div><ul class="footer-nav"><li><a href="about.html">About Us</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">Blog</a></li><li><a href="games.html">Games</a></li></ul></div>
+      <div><div class="footer-h">More</div><ul class="footer-nav"><li><a href="leaderboard.html">Leaderboard</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="org-chart.html">Our Team</a></li><li><a href="media.html">Collaborate</a></li></ul></div>
+      <div><div class="footer-h">Connect</div><ul class="footer-nav"><li><a href="https://www.instagram.com/cyberheroesofficial?igsh=MXd0aGQ4bGE3NW42dQ==" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.linkedin.com/in/uitm-cyberheroes-club-ucc-b5a6482bb/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/officialcyberheroes" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://ctftime.org/team/283021" target="_blank" rel="noopener">CTFtime</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 UiTM Cyberheroes Club. All rights reserved.</p>
+      <p>Built with <span class="text-red">♥</span> by <a href="org-chart.html">171k</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
