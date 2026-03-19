@@ -11,5 +11,18 @@
     "sourceLink": "https://github.com/171k/UCC_QUIZ",
     "author": "171k",
     "date": "2025"
+  },
+  {
+    "id": 2,
+    "title": "Intern with Phish!",
+    "type": "simulation",
+    "difficulty": "",
+    "description": "Your supervisor assigned you with a special task one day 1 internship!",
+    "tech": "HTML / CSS / JS",
+    "thumbnail": "assets/games/internship.png",
+    "playLink": "https://officialcyberheroes.github.io/phishinggame/",
+    "sourceLink": "https://github.com/officialcyberheroes/phishinggame",
+    "author": "171k",
+    "date": "2026"
   }
 ]
