@@ -24,7 +24,7 @@
       {
         "label": "Multimedia",
         "members": [
-          { "name": "sofea", "role": "Multimedia Exec", "initials": "M1", "codename": "", "course": "", "email": "", "photo": "" },
+          { "name": "SOFEA FARISHA BINTI CHE ZULMAIDI", "role": "Multimedia Exec", "initials": "M1", "codename": "xl__ba0", "course": "CS255/ Networking Technology", "email": "sofeafarisha05@gmail.com", "icon": "assets/photos/sofea_icon.png", "photo": "assets/photos/sofea_pp.png"},
           { "name": "NURUL IMAN SOFEA BINTI MOHD FADZILAH", "role": "Multimedia Exec", "initials": "M2", "codename": "ophelia", "course": "CS255/ Networking Technology", "email": "imannsofeaa@gmail.com", "icon": "assets/photos/imanso_icon.png", "photo": "assets/photos/imanso_pp.png" },
           { "name": "AKID AZIZI BIN CHE ISMAIL", "role": "Multimedia Exec", "initials": "M3", "codename": "kiddzzi", "course": "CS240/ Information Technology", "email": "agigiazizi@gmail.com", "icon": "assets/photos/akid_icon.png", "photo": "assets/photos/akid_pp.png" }
         ]
@@ -34,7 +34,7 @@
         "members": [
           { "name": "MUHAMMAD MUFLIH BIN MUHAMMAD FADLI", "role": "Training Exec", "initials": "T1", "codename": "rytz", "course": "CS255/ Networking Technology", "email": "muhdmuflih27@gmail.com", "icon": "assets/photos/muf_icon.png", "photo": "assets/photos/muf_pp.png" },
           { "name": "ayisy", "role": "Training Exec", "initials": "T2", "codename": "", "course": "", "email": "", "icon": "", "photo": "assets/photos/ayisy_pp.png" },
-          { "name": "dania", "role": "Training Exec", "initials": "T3", "codename": "", "course": "", "email": "", "icon": "", "photo": "assets/photos/dania_pp.png" }
+          { "name": "NUR DANIA IMAN BINTI MOHD DIN", "role": "Training Exec", "initials": "T3", "codename": "iwdvty", "course": "CS249/Mathematics", "email": "nurdaniaiman@gmail.com", "icon": "assets/photos/dania_icon.png", "photo": "assets/photos/dania_pp.png" }
         ]
       },
       {
