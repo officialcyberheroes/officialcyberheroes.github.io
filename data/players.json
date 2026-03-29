@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "handle": "pr0nt0",
+    "points": 9858,
+    "solves": 34,
+    "specialty": "All Rounder",
+    "season": "2025"
+  },
+  {
+    "rank": 2,
+    "handle": "RoiRoi",
+    "points": 9708,
+    "solves": 34,
+    "specialty": "Forensic",
+    "season": "2025"
+  },
+  {
+    "rank": 3,
+    "handle": "luna",
+    "points": 6780,
+    "solves": 23,
+    "specialty": "All Rounder",
+    "season": "2025"
+  },
+  {
+    "rank": 4,
+    "handle": "Muhammad Syamil Iman bin Abdul Aziz",
+    "points": 6320,
+    "solves": 21,
+    "specialty": "pwn",
+    "season": "2025"
+  },
+  {
+    "rank": 5,
+    "handle": "171k",
+    "points": 6110,
+    "solves": 22,
+    "specialty": "Forensic, Reverse Engineering",
+    "season": "2025"
+  },
+  {
+    "rank": 6,
+    "handle": "0xhanif",
+    "points": 5860,
+    "solves": 21,
+    "specialty": "Reverse Engineering",
+    "season": "2025"
+  },
+  {
+    "rank": 7,
+    "handle": "Ken Takakura",
+    "points": 4980,
+    "solves": 19,
+    "specialty": "Cryptography",
+    "season": "2025"
+  },
+    {
+    "rank": 8,
+    "handle": "KH",
+    "points": 4980,
+    "solves": 19,
+    "specialty": "Misc, Web",
+    "season": "2025"
+  },
+    {
+    "rank": 9,
+    "handle": "imkmmm",
+    "points": 4739,
+    "solves": 16,
+    "specialty": "Reverse Engineering",
+    "season": "2025"
+  },
+    {
+    "rank": 10,
+    "handle": "eW91IHRob3VnaHQ=",
+    "points": 4350,
+    "solves": 16,
+    "specialty": "Misc",
+    "season": "2025"
+  }
+]

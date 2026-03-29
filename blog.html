@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | UiTM Cyberheroes Club</title>
+  <meta name="description" content="CTF writeups, cybersecurity research, event recaps, and awareness posts from UiTM Cyberheroes Club members." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    .search-box {
+      display: flex; align-items: center; gap: .75rem;
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: .65rem 1rem;
+      margin-bottom: 1.5rem; max-width: 420px;
+    }
+    .search-box input {
+      background: none; border: none; outline: none;
+      color: var(--text-primary); font-family: var(--font-body); font-size: .9rem;
+      flex: 1; min-width: 0;
+    }
+    .search-box input::placeholder { color: var(--text-muted); }
+    .search-box i { color: var(--text-muted); }
+  </style>
+
+  <!-- SEO & Open Graph -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://uitmcyberheroes.com/blog.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Blog | UiTM Cyberheroes Club" />
+  <meta property="og:description" content="CTF writeups, cybersecurity research, event recaps, and awareness posts from UiTM Cyberheroes Club members." />
+  <meta property="og:url" content="https://uitmcyberheroes.com/blog.html" />
+  <meta property="og:image" content="https://uitmcyberheroes.com/assets/logo.png" />
+  <meta property="og:site_name" content="UiTM Cyberheroes Club" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Blog | UiTM Cyberheroes Club" />
+  <meta name="twitter:description" content="CTF writeups, cybersecurity research, event recaps, and awareness posts from UiTM Cyberheroes Club members." />
+  <meta name="twitter:image" content="https://uitmcyberheroes.com/assets/logo.png" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/logo.png" alt="UCC Logo" />
+    <span class="nav-brand-text">UiTM Cyberheroes</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+    <li><a href="https://awan.uitm.edu.my/ctf/" target="_blank" rel="noopener">Playground ↗</a></li>
+    <li><a href="org-chart.html">Our Team</a></li>
+    <li><a href="media.html" class="nav-cta">Collaborate</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="events.html">Events</a>
+  <a href="blog.html">Blog</a>
+  <a href="games.html">Games</a>
+  <a href="leaderboard.html">Leaderboard</a>
+  <a href="hall-of-fame.html">Hall of Fame</a>
+  <a href="https://awan.uitm.edu.my/ctf/" target="_blank" rel="noopener">Playground ↗</a>
+  <a href="org-chart.html">Our Team</a>
+  <a href="media.html">Collaborate</a>
+</div>
+
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <div class="container">
+      <div class="page-tag">// blog</div>
+      <h1>UCC Blog</h1>
+      <p>Writeups, research, event recaps and cybersecurity awareness — all in one place.</p>
+    </div>
+  </div>
+
+  <!-- BLOG GRID -->
+  <section>
+    <div class="container">
+
+      <!-- Controls -->
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+        <div class="search-box">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Search posts..." id="blog-search" />
+        </div>
+        <span class="terminal-tag" id="blog-count">0 posts</span>
+      </div>
+
+      <!-- Category filter -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-group="blog" data-filter="all">All</button>
+        <button class="filter-btn" data-group="blog" data-filter="writeup">
+          <i class="bi bi-flag-fill" style="margin-right:.35rem;"></i>Writeup
+        </button>
+        <button class="filter-btn" data-group="blog" data-filter="research">
+          <i class="bi bi-journal-text" style="margin-right:.35rem;"></i>Research
+        </button>
+        <button class="filter-btn" data-group="blog" data-filter="event">
+          <i class="bi bi-camera-fill" style="margin-right:.35rem;"></i>Event
+        </button>
+        <button class="filter-btn" data-group="blog" data-filter="awareness">
+          <i class="bi bi-megaphone-fill" style="margin-right:.35rem;"></i>Awareness
+        </button>
+      </div>
+
+      <!-- Populated from data/blog.json -->
+      <div class="grid-3" id="blog-grid"></div>
+
+      <!-- No results -->
+      <div class="empty-state" id="no-posts" style="display:none;">
+        <div class="empty-state-icon">📂</div>
+        <p>No posts found. Try a different filter or search term.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTRIBUTE -->
+  <section style="background:var(--bg-secondary); border-top:1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contribute</span>
+        <div class="divider"><div class="divider-dot"></div></div>
+        <h2 class="section-title">Share Your Work</h2>
+        <p class="section-desc">Got a writeup, research piece, event recap or awareness poster to share? Submit it here and get credited.</p>
+      </div>
+      <div class="grid-4">
+        <div class="card">
+          <div class="card-icon"><i class="bi bi-flag-fill" style="font-size:1.5rem;color:var(--red-bright);"></i></div>
+          <h3 class="card-title">Writeup</h3>
+          <p class="card-desc">Solved a CTF challenge? Document your approach, tools and flag - help teammates learn from your solution.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="bi bi-journal-text" style="font-size:1.5rem;color:#fbbf24;"></i></div>
+          <h3 class="card-title">Research</h3>
+          <p class="card-desc">Threat intel, malware analysis, vulnerability research - share your findings with the community.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="bi bi-camera-fill" style="font-size:1.5rem;color:#4ade80;"></i></div>
+          <h3 class="card-title">Event Recap</h3>
+          <p class="card-desc">Post photos, highlights and memories from club events - keep the archive alive for future members.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="bi bi-megaphone-fill" style="font-size:1.5rem;color:#c084fc;"></i></div>
+          <h3 class="card-title">Awareness</h3>
+          <p class="card-desc">Designed a security awareness poster or tip sheet? Upload it here so the community can benefit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand"><img src="assets/logo.png" alt="UCC" /><span class="footer-brand-name">UiTM Cyberheroes Club</span></div><p class="footer-desc">Most nonchalant student cybersecurity club.</p></div>
+      <div><div class="footer-h">Pages</div><ul class="footer-nav"><li><a href="about.html">About Us</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">Blog</a></li>
+    <li><a href="games.html">Games</a></li><li><a href="leaderboard.html">Leaderboard</a></li></ul></div>
+      <div><div class="footer-h">More</div><ul class="footer-nav"><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="org-chart.html">Our Team</a></li><li><a href="media.html">Collaborate</a></li></ul></div>
+      <div><div class="footer-h">Connect</div><ul class="footer-nav"><li><a href="https://www.instagram.com/cyberheroesofficial?igsh=MXd0aGQ4bGE3NW42dQ==" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.linkedin.com/in/uitm-cyberheroes-club-ucc-b5a6482bb/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/officialcyberheroes" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://ctftime.org/team/283021" target="_blank" rel="noopener">CTFtime</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 UiTM Cyberheroes Club. All rights reserved.</p>
+      <p>Built with <span class="text-red">♥</span> by <a href="org-chart.html">171k</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

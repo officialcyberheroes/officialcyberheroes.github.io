@@ -1,0 +1,47 @@
+{
+  "podium": [
+    { "place": 1, "trophy": "🥇", "name": "B14W4K", "event": "ICTFF8 TAMING", "detail": "1st Place - 2026" },
+    { "place": 2, "trophy": "🥈", "name": "PaksaJiha", "event": "UCSI CTF", "detail": "2nd Place - 2025" },
+    { "place": 3, "trophy": "🥉", "name": "AnakSoleh", "event": "MCMC CTF", "detail": "4th Place - 2025" }
+  ],
+  "history": [
+    {
+      "place": "1st",
+      "placeColor": "#f59e0b",
+      "placeEmoji": "🥇",
+      "competition": "TAMING ICTFF8",
+      "organizer": "UiTM Jasin, Melaka",
+      "team": "B14W4K",
+      "type": "ctf",
+      "level": "national",
+      "year": "2026"
+    },
+    {
+      "place": "2nd",
+      "placeColor": "var(--text-primary)",
+      "placeEmoji": "🥈",
+      "competition": "UCSI CTF",
+      "organizer": "UCSI",
+      "team": "PaksaJiha",
+      "type": "ctf",
+      "level": "national",
+      "year": "2025"
+    },
+    {
+      "place": "4th and 5th",
+      "placeColor": "var(--text-primary)",
+      "placeEmoji": "",
+      "competition": "MCMC CTF",
+      "organizer": "MCMC",
+      "team": "AnakSoleh & InsyaAllahFinal",
+      "type": "ctf",
+      "level": "national",
+      "year": "2025"
+    }
+  ],
+  "stars": [
+    { "emoji": "⭐", "name": "pr0nt0", "award": "Most Solves",  "initials": "Z", "bio": "Joined the most competitions and achieved the most." },
+    { "emoji": "🏆", "name": "171k", "award": "Cyberheroes Symbol",  "initials": "R", "bio": "Selected as UiTM representative in multiple cybersecurity events. Also, glazing the president is a must"},
+    { "emoji": "🚀", "name": "rytz", "award": "Rising Star",  "initials": "M", "bio": "Cyberheroes rising star. Joined much competitions as beginner"}
+  ]
+}

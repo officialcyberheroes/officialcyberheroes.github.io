@@ -1,0 +1,56 @@
+{
+  "chart": {
+    "president": {
+      "name": "RAZLAN BIN RAMLI",
+      "role": "President",
+      "initials": "R",
+      "codename": "171k",
+      "course": "CS251 / Netcentric Computing",
+      "email": "lanbuatkeje@gmail.com",
+      "icon":  "assets/photos/171k_icon.png",
+      "photo": "assets/photos/razlan_pp.jpg"
+    },
+    "vicePresidents": [
+      { "name": "AIMAN BIN JAMALUDDIN", "role": "Vice President I",  "initials": "VP1", "codename": "ILikeWaterDry", "course": "CS251 / Netcentric Computing", "email": "aimanj474@gmail.com", "icon": "assets/photos/aiman_icon.png", "photo": "assets/photos/aiman_pp.jpg" },
+      { "name": "UMAR ABDUL AZIZ BIN MOHAMAD HISWANDY", "role": "Vice President II", "initials": "VP2", "codename": "umaarlll", "course": "CS255/ Networking Technology", "email": "umarqwq@gmail.com", "icon": "assets/photos/umar_icon.png", "photo": "assets/photos/umar_pp.jpg" }
+    ],
+    "secretariat": [
+      { "name": "FARAH NUR FARZANA BINTI CHE AHMAD ZAMRAN ",      "role": "Secretary",      "initials": "SC", "codename": "chxrry", "course": "CS255/ Networking Technology", "email": "Farahnu45@gmail.com", "icon": "assets/photos/farah_icon.png", "photo": "assets/photos/farah_pp.jpg" },
+      { "name": "NUR IMAN AMANI BINTI ABDUL HISHAM", "role": "Vice Secretary", "initials": "VS", "codename": "imanamaniii", "course": "CS251 / Netcentric Computing", "email": "imanamani.hisham@gmail.com", "icon": "assets/photos/iman_icon.png", "photo": "assets/photos/iman_pp.jpg" },
+      { "name": "DINA BATRISYA BINTI AMRAN",      "role": "Treasurer",      "initials": "TR", "codename": "wolfkazy", "course": "CS240/ Information Technology", "email": "dinabatrisya456@gmail.com", "icon": "assets/photos/dina_icon.png", "photo": "assets/photos/dina_pp.jpg" },
+      { "name": "MOHAMMAD EMIR FARHAN BIN MOHAMMAD ISKANDAR", "role": "Vice Treasurer", "initials": "VT", "codename": "silverback_542", "course": "CS255/ Networking Technology", "email": "emirfarhan434@gmail.com", "icon": "assets/photos/emir_icon.png", "photo": "assets/photos/emir_pp.jpg" }
+    ],
+    "committees": [
+      {
+        "label": "Multimedia",
+        "members": [
+          { "name": "SOFEA FARISHA BINTI CHE ZULMAIDI", "role": "Multimedia Exec", "initials": "M1", "codename": "xl__ba0", "course": "CS255/ Networking Technology", "email": "sofeafarisha05@gmail.com", "icon": "assets/photos/sofea_icon.png", "photo": "assets/photos/sofea_pp.jpg" },
+          { "name": "NURUL IMAN SOFEA BINTI MOHD FADZILAH", "role": "Multimedia Exec", "initials": "M2", "codename": "ophelia", "course": "CS255/ Networking Technology", "email": "imannsofeaa@gmail.com", "icon": "assets/photos/imanso_icon.png", "photo": "assets/photos/imanso_pp.jpg" },
+          { "name": "AKID AZIZI BIN CHE ISMAIL", "role": "Multimedia Exec", "initials": "M3", "codename": "kiddzzi", "course": "CS240/ Information Technology", "email": "agigiazizi@gmail.com", "icon": "assets/photos/akid_icon.png", "photo": "assets/photos/akid_pp.jpg" }
+        ]
+      },
+      {
+        "label": "Training",
+        "members": [
+          { "name": "MUHAMMAD MUFLIH BIN MUHAMMAD FADLI", "role": "Training Exec", "initials": "T1", "codename": "rytz", "course": "CS255/ Networking Technology", "email": "muhdmuflih27@gmail.com", "icon": "assets/photos/muf_icon.png", "photo": "assets/photos/muf_pp.jpg" },
+          { "name": "MUHAMMAD AYISY THAQIF BIN MOHD AZMAN ", "role": "Training Exec", "initials": "T2", "codename": "Kharjo99", "course": "cs230/ Computer Science", "email": "ayisy2016@gmail.com", "icon": "assets/photos/ayisy_icon.png", "photo": "assets/photos/ayisy_pp.jpg" },
+          { "name": "NUR DANIA IMAN BINTI MOHD DIN", "role": "Training Exec", "initials": "T3", "codename": "iwdvty", "course": "CS249/Mathematics", "email": "nurdaniaiman@gmail.com", "icon": "assets/photos/dania_icon.png", "photo": "assets/photos/dania_pp.jpg" }
+        ]
+      },
+      {
+        "label": "Publicity",
+        "members": [
+          { "name": "HASYA DINI BINTI ROY FAHMI", "role": "Publicity Exec", "initials": "PE1", "codename": "Sealie", "course": "CS266/Information System Engineering ", "email": "dinihasya15@gmail.com", "icon": "assets/photos/hasya_icon.png", "photo": "assets/photos/dini_pp.jpg" },
+          { "name": "ALYA SOPHEA BINTI SHAHRUL MUNIR", "role": "Publicity Exec", "initials": "P2", "codename": "i9nyloi", "course": "CS255/ Networking Technology", "email": "alyasophea2203@gmail.com", "icon": "assets/photos/alya_icon.png", "photo": "assets/photos/alya_pp.jpg" }
+        ]
+      },
+      {
+        "label": "Corporate",
+        "members": [
+          { "name": "ADEENA AIMAL BINTI JAMALULKHAIR ", "role": "Corporate Exec", "initials": "C1", "codename": "w4termelonlych33", "course": "CS251 / Netcentric Computing", "email": "addeena.j@gmail.com", "icon": "assets/photos/deena_icon.png", "photo": "assets/photos/deena_pp.jpg" },
+          { "name": "AIDA SYAZWANI BINTI SAMANI", "role": "Corporate Exec", "initials": "C2", "codename": "aida", "course": "CS251 / Netcentric Computing", "email": "aidasamani108@gmail.com", "icon": "assets/photos/aida_icon.png", "photo": "assets/photos/aida_pp.jpg" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "e1",
+    "status": "upcoming",
+    "type": "workshop",
+    "title": "Road To White Hat Gen VI",
+    "day": "TBD",
+    "month": "2026",
+    "location": "Comp Lab 14, UiTM Shah Alam",
+    "time": "Time TBD",
+    "access": "Members Only",
+    "description": "Details about this event will be posted soon. Stay tuned to our social media for updates.",
+    "detailsLink": "#",
+    "free": false
+  },
+  {
+    "id": "e2",
+    "status": "upcoming",
+    "type": "competition",
+    "title": "Internal Poster Design Competition",
+    "day": "TBD",
+    "month": "2026",
+    "location": "UiTM Shah Alam",
+    "time": "TBD",
+    "access": "Members Only",
+    "description": "An internal cybersecurity poster designing contest for UCC members. Topic and schedule will be announced via our group chat.",
+    "detailsLink": "#",
+    "free": true
+  },
+  {
+    "id": "p1",
+    "status": "past",
+    "type": "ctf",
+    "title": "TAMING ICTFF8",
+    "day": "--",
+    "month": "2026",
+    "location": "UiTM Jasin, Melaka",
+    "result": "1st Place in Student Category",
+    "description": "The event sucks.",
+    "writeupLink": "writeup.html",
+    "galleryLink": null
+  },
+  {
+    "id": "p2",
+    "status": "past",
+    "type": "workshop",
+    "title": "Road To White Hat 5.0",
+    "day": "--",
+    "month": "2025",
+    "location": "UiTM Campus",
+    "attendees": "70 attendees",
+    "description": "The workshop went so well, just nice, love it.",
+    "writeupLink": null,
+    "galleryLink": "#"
+  }
+]

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | UiTM Cyberheroes Club</title>
+  <meta name="description" content="Meet the committee behind UiTM Cyberheroes Club — our organizational structure, roles, and the people who make it happen." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    /* Org chart tree lines */
+    .org-tree li { transition: all .3s ease; }
+    .org-node-wrap { display: inline-block; }
+
+    /* Dept section */
+    .dept-section { margin-bottom: 3rem; }
+    .dept-label {
+      display: flex; align-items: center; gap: .75rem;
+      font-family: var(--font-mono); font-size: .72rem; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+    .dept-label::after { content:''; flex:1; height:1px; background: var(--border); }
+
+    /* Member grid cards */
+    .member-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 1.5rem; text-align: center;
+      transition: var(--ease);
+    }
+    .member-card:hover { border-color: var(--border-red); transform: translateY(-4px); box-shadow: var(--shadow-red); }
+    .member-card .org-avatar { width: 64px; height: 64px; font-size: 1.5rem; margin: 0 auto 1rem; }
+    .member-card-name { font-weight: 700; font-family: var(--font-head); margin-bottom: .25rem; }
+    .member-card-role { font-size: .75rem; color: var(--red-bright); font-family: var(--font-mono); margin-bottom: .5rem; }
+    .member-card-desc { font-size: .82rem; color: var(--text-secondary); line-height: 1.6; }
+
+    /* Interactive tree */
+    .tree-container { display: flex; flex-direction: column; align-items: center; }
+    .tree-row { display: flex; justify-content: center; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 0; }
+    .tree-connector { display: flex; flex-direction: column; align-items: center; }
+    .tree-line-v { width: 2px; height: 40px; background: linear-gradient(180deg, var(--navy), var(--red)); }
+    .tree-line-h-wrap { display: flex; align-items: flex-start; position: relative; }
+    .tree-branch {
+      display: flex; flex-direction: column; align-items: center; gap: 0;
+      position: relative;
+    }
+    .tree-branch-children { display: flex; gap: 1.25rem; align-items: flex-start; position: relative; padding-top: 40px; }
+    .tree-branch-children::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent 10%, var(--navy) 30%, var(--red) 70%, transparent 90%);
+    }
+    .tree-child { display: flex; flex-direction: column; align-items: center; gap: 0; position: relative; }
+    .tree-child::before { content: ''; width: 2px; height: 40px; background: linear-gradient(180deg, var(--navy), var(--red)); }
+  </style>
+
+  <!-- SEO & Open Graph -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://uitmcyberheroes.com/org-chart.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Our Team | UiTM Cyberheroes Club" />
+  <meta property="og:description" content="Meet the committee behind UiTM Cyberheroes Club — our organizational structure, roles, and the people who make it happen." />
+  <meta property="og:url" content="https://uitmcyberheroes.com/org-chart.html" />
+  <meta property="og:image" content="https://uitmcyberheroes.com/assets/logo.png" />
+  <meta property="og:site_name" content="UiTM Cyberheroes Club" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Our Team | UiTM Cyberheroes Club" />
+  <meta name="twitter:description" content="Meet the committee behind UiTM Cyberheroes Club — our organizational structure, roles, and the people who make it happen." />
+  <meta name="twitter:image" content="https://uitmcyberheroes.com/assets/logo.png" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <img src="assets/logo.png" alt="UCC Logo" />
+    <span class="nav-brand-text">UiTM Cyberheroes</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="hall-of-fame.html">Hall of Fame</a></li>
+      <li><a href="https://awan.uitm.edu.my/ctf/" target="_blank" rel="noopener">Playground ↗</a></li>
+    <li><a href="org-chart.html" class="active">Our Team</a></li>
+    <li><a href="media.html" class="nav-cta">Collaborate</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="events.html">Events</a>
+  <a href="blog.html">Blog</a>
+  <a href="games.html">Games</a><a href="leaderboard.html">Leaderboard</a>
+  <a href="hall-of-fame.html">Hall of Fame</a>
+  <a href="https://awan.uitm.edu.my/ctf/" target="_blank" rel="noopener">Playground ↗</a><a href="org-chart.html">Our Team</a>
+  <a href="media.html">Collaborate</a>
+</div>
+
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <div class="container">
+      <div class="page-tag">// organization chart</div>
+      <h1>Meet Our Team</h1>
+      <p>The dedicated people who keep UiTM Cyberheroes Club running - from leadership to specialized divisions.</p>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE ORG CHART -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// structure</span>
+        <div class="divider"><div class="divider-dot"></div></div>
+        <h2 class="section-title">Organizational Structure</h2>
+        <p class="section-desc">Click to expand member details.</p>
+      </div>
+
+      <!-- Populated from data/members.json -->
+      <div class="org-chart-wrap" id="org-chart-render"></div>
+    </div>
+  </section>
+
+  <!-- JOIN CTA -->
+  <section style="background:var(--bg-secondary); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container" style="text-align:center;">
+      <span class="section-tag">// join us</span>
+      <div class="divider" style="margin:.75rem auto 1rem;"><div class="divider-dot"></div></div>
+      <h2 style="font-size:clamp(1.5rem,3vw,2rem); margin-bottom:1rem;">Want to Be Part of the Team?</h2>
+      <p style="color:var(--text-secondary); max-width:480px; margin:0 auto 2rem;">
+        We are not looking for one now, but we will post one if there are any openings in the future!
+      </p>
+      <a href="media.html" class="btn btn-primary"><i class="bi bi-envelope-fill"></i> Contact Us</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand"><img src="assets/logo.png" alt="UCC" /><span class="footer-brand-name">UiTM Cyberheroes Club</span></div><p class="footer-desc">Malaysia's premier student cybersecurity club.</p></div>
+      <div><div class="footer-h">Pages</div><ul class="footer-nav"><li><a href="about.html">About Us</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">Blog</a></li><li><a href="leaderboard.html">Leaderboard</a></li></ul></div>
+      <div><div class="footer-h">More</div><ul class="footer-nav"><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="org-chart.html">Our Team</a></li><li><a href="media.html">Collaborate</a></li></ul></div>
+      <div><div class="footer-h">Connect</div><ul class="footer-nav"><li><a href="https://www.instagram.com/cyberheroesofficial?igsh=MXd0aGQ4bGE3NW42dQ==" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.linkedin.com/in/uitm-cyberheroes-club-ucc-b5a6482bb/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/officialcyberheroes" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://ctftime.org/team/283021" target="_blank" rel="noopener">CTFtime</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 UiTM Cyberheroes Club. All rights reserved.</p>
+      <p>Built with <span class="text-red">♥</span> by <a href="org-chart.html">171k</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

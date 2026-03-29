@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "TAMING ICTFF8 — Web Challenge Writeup",
+    "category": "writeup",
+    "tag": "Web",
+    "event": "TAMING ICTFF8",
+    "excerpt": "Walkthrough of the web exploitation challenge from ICTFF8, covering SQL injection and authentication bypass techniques.",
+    "author": "171k",
+    "date": "2026-01",
+    "link": "https://171k.my/ctf/taming25web/"
+  },
+  {
+    "id": 2,
+    "title": "Duit Raya Phishing Campaign Awareness!",
+    "category": "awareness",
+    "tag": "",
+    "event": "",
+    "excerpt": "Awareness campaign about the Duit Raya phishing scheme targeting Malaysians.",
+    "author": "UCC Team",
+    "date": "2026-02",
+    "link": "https://github.com/officialcyberheroes/TNGDuitRayaphishingawareness/blob/main/duitrayaphishingcampaign.md"
+  },
+  {
+    "id": 3,
+    "title": "Road To White Hat Gen VI — Event Recap",
+    "category": "event",
+    "tag": "",
+    "event": "Road To White Hat Gen VI",
+    "excerpt": "Photos and highlights from our flagship training programme - Road To White Hat Gen VI.",
+    "author": "UCC",
+    "date": "2026-05",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "title": "TNG Phishing analysis",
+    "category": "research",
+    "tag": "Threat Intel",
+    "event": "",
+    "excerpt": "An analysis made by the great 171k on TNG phishing campaign.",
+    "author": "171k",
+    "date": "2026-03",
+    "link": "https://171k.my/2026/03/10/tngmadaniphishing/"
+  },
+    {
+    "id": 5,
+    "title": "UMCS CTF 25 preliminary writeup",
+    "category": "writeup",
+    "tag": "CTF Writeup",
+    "event": "UMCS CTF 25",
+    "excerpt": "Writeup made by 171k on UMCS CTF 25!",
+    "author": "171k",
+    "date": "2025-04",
+    "link": "https://github.com/officialcyberheroes/UMCSCTF25-WriteupbyT3PUNG_P3L1T4/blob/main/UMCSCTF%20WU%20T3PUNG_P3L1T4.pdf"
+  },
+  {
+    "id": 6,
+    "title": "Email Phishing Campaign Awareness!",
+    "category": "awareness",
+    "tag": "",
+    "event": "",
+    "excerpt": "Awareness campaign about the Email phishing scheme targeting Malaysians.",
+    "author": "UCC Team",
+    "date": "2026-02",
+    "link": "https://github.com/officialcyberheroes/Phishingawareness/blob/main/phishingcampaign.md"
+  },
+  {
+    "id": 7,
+    "title": "UFUTURE Security Alert!",
+    "category": "awareness",
+    "tag": "",
+    "event": "",
+    "excerpt": "Awareness campaign about the UFUTURE security threat targeting Malaysians.",
+    "author": "UCC Team",
+    "date": "2026-02",
+    "link": "https://github.com/officialcyberheroes/UFUTURESecalert/blob/main/ufsecalert.md"
+  }
+]
