@@ -24,5 +24,18 @@
     "sourceLink": "https://github.com/officialcyberheroes/phishinggame",
     "author": "171k",
     "date": "2026"
+  },
+    {
+    "id": 3,
+    "title": "ForensicHeroes: Leaked Paper!",
+    "type": "puzzle",
+    "difficulty": "",
+    "description": "ForensicHeroes episode 1!!",
+    "tech": "HTML / CSS / JS",
+    "thumbnail": "assets/games/forensicheroes.png",
+    "playLink": "https://uitmcyberheroes.com/ucc-theleakedcase/",
+    "sourceLink": "#",
+    "author": "171k",
+    "date": "2026"
   }
 ]
