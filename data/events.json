@@ -53,4 +53,18 @@
     "writeupLink": null,
     "galleryLink": "#"
   }
+  {
+  "id": "3",
+  "status": "upcoming",
+  "type": "workshop",
+  "title": "PreUMCS CTF Workshop 2026",
+  "day": "17",
+  "month": "Apr 26",
+  "location": "Bilik SOC, CS2, UiTM Shah Alam",
+  "time": "2:30pm-6:30pm",
+  "access": "Members Only",
+  "description": "A workshop exclusively opened to UMCS CTF participants only to sharpen skills, learn from experienced speakers, and boost confidence before the competition",
+  "detailsLink": "#",
+  "free": false
+  }
 ]
