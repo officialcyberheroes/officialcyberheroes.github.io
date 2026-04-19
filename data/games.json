@@ -37,5 +37,18 @@
     "sourceLink": "#",
     "author": "171k",
     "date": "2026"
+  },
+    {
+    "id": 4,
+    "title": "Malshooter",
+    "type": "challenge",
+    "difficulty": "",
+    "description": "Malware shooting game",
+    "tech": "HTML / CSS / JS",
+    "thumbnail": "assets/games/firewall.png",
+    "playLink": "https://uitmcyberheroes.com/systempro/",
+    "sourceLink": "#",
+    "author": "171k",
+    "date": "2026"
   }
 ]
